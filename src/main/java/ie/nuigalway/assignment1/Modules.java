@@ -21,4 +21,13 @@ public class Modules {
         this.students = students;
     }
     
+    public String getName() 
+    {
+        return name;
+    }
+    
+    public ArrayList getStudents()
+    {
+        return students;
+    }
 }
