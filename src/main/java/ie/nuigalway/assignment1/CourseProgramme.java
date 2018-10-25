@@ -5,7 +5,7 @@
  */
 package ie.nuigalway.assignment1;
 
-import org.joda.time.DateTime;
+import org.joda.time.LocalDate;
 import java.util.ArrayList;
 /**
  *
@@ -15,10 +15,10 @@ public class CourseProgramme {
     
     private String courseName;
     private ArrayList courseModules;
-    private DateTime startDate;
-    private DateTime endDate;
+    private LocalDate startDate;
+    private LocalDate endDate;
     
-    public CourseProgramme(String courseName, ArrayList courseModules, DateTime startDate, DateTime endDate)
+    public CourseProgramme(String courseName, ArrayList courseModules, LocalDate startDate, LocalDate endDate)
     {
         this.courseName = courseName;
         this.courseModules = courseModules;
