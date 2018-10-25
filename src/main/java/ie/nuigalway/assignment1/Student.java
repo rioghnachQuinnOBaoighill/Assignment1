@@ -37,5 +37,15 @@ public class Student {
     {
         return username = name + ID;
     }
+    
+    public String getName()
+    {
+        return name;
+    }
+    
+    public String getCourse()
+    {
+        return course;
+    }
 }
 
