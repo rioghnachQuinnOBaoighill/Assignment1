@@ -44,9 +44,7 @@ public class CourseProgramme {
         for (int i=0; i<allModules.size(); i++)
         {
             Modules mod = allModules.get(i);
-            
             ArrayList<Student> modStudents = new ArrayList<Student>();
-            
             modStudents = mod.getStudents();
             
             for (int j = 0; j<modStudents.size();j++)
@@ -56,13 +54,13 @@ public class CourseProgramme {
                 if (stu.getCourse().equals(this.getCourseName()) &&! (allStudents.contains(stu)))
                 {
                     allStudents.add(stu);
-                    System.out.println(stu.getName() + "\t Course Title: " + stu.getCourse());
-                    System.out.println("\t Course Modules: ");
+                    System.out.println("Name: " + stu.getName() + "\t Course Title: " + stu.getCourse());
+                    System.out.println("\t Course " + stu.getCourse() + " Modules: ");
                     for(int m=0; m<allModules.size(); m++)
                     {
-                        System.out.print(allModules.get(m).getName());
+                        System.out.println(allModules.get(m).getName());
                     }
-                    System.out.println();
+                    System.out.println("------------------------------------------------");
                 }
             }
         }
