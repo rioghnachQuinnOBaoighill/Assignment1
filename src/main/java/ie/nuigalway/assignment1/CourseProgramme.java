@@ -38,37 +38,16 @@ public class CourseProgramme {
     
     public void ToString()
     {
-        ArrayList<Student> allStudents = new ArrayList<Student>();
         ArrayList<Modules> allModules = new ArrayList<Modules>();
         allModules = this.getModules();
-//        for (int i=0; i<allModules.size(); i++)
-//        {
-//            Modules mod = allModules.get(i);
-//            ArrayList<Student> modStudents = new ArrayList<Student>();
-//            modStudents = mod.getStudents();
-//            
-//            for (int j = 0; j<modStudents.size();j++)
-//            {
-//                Student stu = modStudents.get(j);
-//                
-//                if (stu.getCourse().equals(this.getCourseName()) &&! (allStudents.contains(stu)))
-//                {
-//                    allStudents.add(stu);
-//                    System.out.println("Name: " + stu.getName() + "\t Course Title: " + stu.getCourse());
-//                    System.out.println("\t Course " + stu.getCourse() + " Modules: ");
-//                    for(int m=0; m<allModules.size(); m++)
-//                    {
-//                        System.out.println(allModules.get(m).getName());
-//                    }
-//                    System.out.println("------------------------------------------------");
-//                }
-//            }
-//        }
-    for (Modules mod : allModules){
-        ArrayList<Student> modStudents = mod.getStudents();
-        for (Student student : modStudents){
-            System.out.println(student.getName());
-        }
+        for (Modules mod : allModules)
+        {
+            System.out.println("Module Name: " + mod.getName());
+            ArrayList<Student> modStudents = mod.getStudents();
+            for (Student student : modStudents){
+                System.out.println("Student Name: " + student.getName() + "\t Course: " + student.getCourse());
+            }
+            System.out.println();
         }
     }
 }
