@@ -45,7 +45,7 @@ public class CourseProgramme {
             System.out.println("Module Name: " + mod.getName());
             ArrayList<Student> modStudents = mod.getStudents();
             for (Student student : modStudents){
-                System.out.println("Student Name: " + student.getName() + "\t Course: " + student.getCourse());
+                System.out.println("Student Name: " + student.getName() + "\t Username: " + student.getUsername(student) + "\t Course: " + student.getCourse());
             }
             System.out.println();
         }

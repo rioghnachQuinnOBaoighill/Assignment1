@@ -36,46 +36,14 @@ public class CourseProgrammeTest {
     @After
     public void tearDown() {
     }
-
-    /**
-     * Test of getCourseName method, of class CourseProgramme.
- */
-//        @Test
-//    public void testGetCourseName() {
-//
-//        System.out.println("getCourseName");
-//        CourseProgramme instance = null;
-//        String expResult = "";
-//        String result = instance.getCourseName();
-//        assertEquals(expResult, result);
-//        // TODO review the generated test code and remove the default call to fail.
-//        fail("The test case is a prototype.");
-//    }
-//
-//    /**
-//     * Test of getModules method, of class CourseProgramme.
-//     */
-//    @Test
-//    public void testGetModules() {
-//        System.out.println("getModules");
-//        CourseProgramme instance = null;
-//        ArrayList expResult = null;
-//        ArrayList result = instance.getModules();
-//        assertEquals(expResult, result);
-//        // TODO review the generated test code and remove the default call to fail.
-//        fail("The test case is a prototype.");
-//    }
-
-    /**
-     * Test of ToString method, of class CourseProgramme.
-     */
+    
     @Test
     public void testToString() {
-        Student stu1 = new Student("Sam Jones", 22, 15358888, "17/8/1996", "4BP1");
+        Student stu1 = new Student("Samuel Jones", 22, 15358888, "17/8/1996", "4BP1");
         Student stu2 = new Student("Molly Burke", 23, 15358557, "26/2/1995", "4BP1");
-        Student stu3 = new Student("Molly Burke", 23, 15358557, "26/2/1995", "4BP1");
-        Student stu4 = new Student("Evan Smith", 25, 15387188, "17/8/1993", "4BG1");
-        Student stu5 = new Student("josh Flannery", 21, 19996388, "17/8/1997", "4BGR1");
+        Student stu3 = new Student("Eoin Farnin", 23, 15358557, "26/2/1995", "4BP1");
+        Student stu4 = new Student("Eibhin Smith", 25, 15387188, "17/8/1993", "4BG1");
+        Student stu5 = new Student("josh Flannery", 21, 19996388, "17/8/1997", "4BG1");
         Student stu6 = new Student("James Murphy", 19, 15456825, "17/8/1999", "4BG1");
 
         //ArrayList for students of 4BP1
@@ -129,8 +97,6 @@ public class CourseProgrammeTest {
         CourseProgramme BP = new CourseProgramme("Electronic and Computer Engineering", modulesBP, start, endBP);
         CourseProgramme BG = new CourseProgramme("Biomedical Engineering", modulesBG, start, endBG);
         
-//        BP.ToString();
-//        BG.ToString();
         System.out.println("ToString");
         CourseProgramme instance = BP;
         instance.ToString();
